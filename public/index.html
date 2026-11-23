@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dapper Scents community — never let your light go out." />
+  <title>Dapper Scents | The Light List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top">DAPPER <span>SCENTS</span></a><a class="quiet-link" href="https://jamesbeverlydemo.netlify.app/dapper/">SHOP THE COLLECTION</a></header>
+  <main id="top">
+    <section class="hero">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <p class="eyebrow">THE DAPPER SCENTS COMMUNITY</p>
+      <h1>Never let your<br><em>light go out.</em></h1>
+      <p class="hero-copy">A place for people who create atmosphere on purpose. Join the list, share your ritual, and help someone else find their next signature scent.</p>
+      <a class="button" href="#join">JOIN THE LIGHT LIST</a>
+      <p class="tiny">FRAGRANCE • RITUAL • PRESENCE</p>
+    </section>
+
+    <section class="statement"><p class="eyebrow">MORE THAN A SCENT</p><h2>Every Dapper ritual starts with a moment made <em>intentional.</em></h2><p>Whether it is a candle at the end of a long day or a room spray before company arrives, your space deserves to feel like you.</p></section>
+
+    <section class="split" id="join">
+      <div class="join-copy"><p class="eyebrow">STAY IN THE GLOW</p><h2>Join the<br><em>Light List.</em></h2><p>Get first access to new scents, restocks, gifting ideas and Dapper moments in the community.</p></div>
+      <form name="dapper-light-list" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="signup-form">
+        <input type="hidden" name="form-name" value="dapper-light-list" />
+        <p class="hidden"><label>Do not fill this out <input name="bot-field" /></label></p>
+        <label>FIRST NAME<input type="text" name="first-name" autocomplete="given-name" required /></label>
+        <label>EMAIL ADDRESS<input type="email" name="email" autocomplete="email" required /></label>
+        <button class="button" type="submit">JOIN THE LIST</button>
+        <p class="form-note">No noise. Just things that help your space shine.</p>
+      </form>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="review-heading"><div><p class="eyebrow">THE DAPPER WORD</p><h2>Lit by the<br><em>community.</em></h2></div><p>Real thoughts from people who chose to make room for a better atmosphere.</p></div>
+      <div class="review-grid" id="review-grid" aria-live="polite"><p class="loading">Loading community reviews…</p></div>
+    </section>
+
+    <section class="review-form-wrap">
+      <div><p class="eyebrow">SHARE YOUR RITUAL</p><h2>How did Dapper<br><em>make you feel?</em></h2><p>Your review appears on this page as soon as you submit it.</p></div>
+      <form id="review-form" class="review-form">
+        <div class="field-row"><label>YOUR NAME<input name="name" maxlength="60" required /></label><label>PRODUCT / SCENT<input name="product" maxlength="80" placeholder="Ex: No.09 Couture" /></label></div>
+        <fieldset><legend>YOUR RATING</legend><div class="rating-options"><label><input type="radio" name="rating" value="5" checked /> ★★★★★</label><label><input type="radio" name="rating" value="4" /> ★★★★</label><label><input type="radio" name="rating" value="3" /> ★★★</label></div></fieldset>
+        <label>YOUR REVIEW<textarea name="text" minlength="8" maxlength="500" required placeholder="Tell the community about your Dapper experience…"></textarea></label>
+        <button class="button" type="submit">SHARE MY REVIEW</button><p id="review-status" class="form-note" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top">DAPPER <span>SCENTS</span></a><p>NEVER LET YOUR LIGHT GO OUT.</p><a href="https://jamesbeverlydemo.netlify.app/dapper/">BACK TO DAPPER SCENTS</a></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
